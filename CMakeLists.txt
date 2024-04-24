@@ -15,8 +15,10 @@ set ( CMAKE_CXX_EXTENSIONS        OFF )
 
 # Source
 
-set ( SOURCE_ONE_WEEKEND
+set ( RAYTRACING_TEST
   src/main.cpp
+  src/vec3.h
+  src/color.h
 )
 
 include_directories(src)
@@ -49,4 +51,4 @@ elseif (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 # Executables
-add_executable(main ${SOURCE_ONE_WEEKEND})
+add_executable(main ${RAYTRACING_TEST})
